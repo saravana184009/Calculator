@@ -1,0 +1,108 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1c; /* Dark background */
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.calculator {
+    width: 340px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #333333; /* Dark calculator body */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+.calculator-display {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+#display {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 48px;
+    text-align: right;
+    outline: none;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+    background-color: #505050; /* Dark gray for number buttons */
+}
+
+button:hover {
+    background-color: #636363;
+}
+
+button:active {
+    background-color: #4a4a4a;
+}
+
+.operator {
+    background-color: #ff9500; /* Orange color for operators */
+}
+
+.operator:hover {
+    background-color: #e08900;
+}
+
+.operator:active {
+    background-color: #cc7a00;
+}
+
+.function {
+    background-color: #a5a5a5; /* Light gray for function buttons */
+    color: black;
+}
+
+.function:hover {
+    background-color: #b7b7b7;
+}
+
+.function:active {
+    background-color: #979797;
+}
+
+.equal-sign {
+    background-color: #ff9500; /* Orange for the equal sign */
+    color: white;
+    grid-row: span 2;
+}
+
+.equal-sign:hover {
+    background-color: #e08900;
+}
+
+.equal-sign:active {
+    background-color: #cc7a00;
+}
+
+.zero {
+    grid-column: span 2; /* Double width for the zero button */
+    border-radius: 50px;
+}
